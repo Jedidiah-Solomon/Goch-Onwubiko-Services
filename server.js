@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 
 app.get("/life-stats", (req, res) => {
   const lifeStats = {
-    name: "Creative Coder Jed",
+    name: "Creative Coder Jed.",
     coffeeCupsToday: 3,
     linesOfCode: 1427,
     gitCommits: 6,
