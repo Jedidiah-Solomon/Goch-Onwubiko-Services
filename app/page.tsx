@@ -491,63 +491,8 @@ export default function LandingPage() {
 
             <div className="grid md:grid-cols-2 gap-12">
               {/* Contact Form */}
-              <Card className="shadow-lg border-0">
-                <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                    Send a Message
-                  </h3>
-                  <form className="space-y-6">
-                    <div className="grid md:grid-cols-2 gap-4">
-                      <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-2">
-                          First Name
-                        </label>
-                        <Input placeholder="Your first name" />
-                      </div>
-                      <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Last Name
-                        </label>
-                        <Input placeholder="Your last name" />
-                      </div>
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Email
-                      </label>
-                      <Input
-                        type="email"
-                        placeholder="your.email@example.com"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Service Needed
-                      </label>
-                      <select className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                        <option>Social Media Management</option>
-                        <option>Graphic Design</option>
-                        <option>Website Development</option>
-                        <option>All Services</option>
-                        <option>Other</option>
-                      </select>
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Project Details
-                      </label>
-                      <Textarea
-                        placeholder="Tell me about your project, goals, and timeline..."
-                        rows={4}
-                      />
-                    </div>
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-lg py-3">
-                      Send Message
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </Button>
-                  </form>
-                </CardContent>
-              </Card>
+
+              <ContactForm />
 
               {/* Contact Info */}
               <div className="space-y-8">
