@@ -79,7 +79,7 @@ export default function LandingPage() {
       {/* Header */}
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold text-gray-900">Goch Onwubiko</div>
+          <div className="text-2xl font-bold text-gray-900">Onwubiko Goch</div>
           <nav className="hidden md:flex space-x-8">
             <Link
               href="#about"
@@ -332,7 +332,7 @@ export default function LandingPage() {
               </CardContent>
             </Card>
 
-            {/* Website Development */}
+            {/* Professional Writing */}
             <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
               <CardContent className="p-8">
                 <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-green-200 transition-colors">
@@ -348,19 +348,19 @@ export default function LandingPage() {
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm text-gray-600">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    Responsive Web Design
+                    Ghost Writing
                   </li>
                   <li className="flex items-center text-sm text-gray-600">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    E-commerce Solutions
+                    Copywriting
                   </li>
                   <li className="flex items-center text-sm text-gray-600">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    SEO Optimization
+                    Content Writing
                   </li>
                   <li className="flex items-center text-sm text-gray-600">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    Maintenance & Support
+                    Research Writing
                   </li>
                 </ul>
                 <Button className="w-full bg-green-600 hover:bg-green-700">
@@ -491,8 +491,63 @@ export default function LandingPage() {
 
             <div className="grid md:grid-cols-2 gap-12">
               {/* Contact Form */}
-
-              <ContactForm />
+              <Card className="shadow-lg border-0">
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                    Send a Message
+                  </h3>
+                  <form className="space-y-6">
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          First Name
+                        </label>
+                        <Input placeholder="Your first name" />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          Last Name
+                        </label>
+                        <Input placeholder="Your last name" />
+                      </div>
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Email
+                      </label>
+                      <Input
+                        type="email"
+                        placeholder="your.email@example.com"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Service Needed
+                      </label>
+                      <select className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        <option>Social Media Management</option>
+                        <option>Graphic Design</option>
+                        <option>Website Development</option>
+                        <option>All Services</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Project Details
+                      </label>
+                      <Textarea
+                        placeholder="Tell me about your project, goals, and timeline..."
+                        rows={4}
+                      />
+                    </div>
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-lg py-3">
+                      Send Message
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Button>
+                  </form>
+                </CardContent>
+              </Card>
 
               {/* Contact Info */}
               <div className="space-y-8">
@@ -573,7 +628,7 @@ export default function LandingPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
-              <h3 className="text-2xl font-bold mb-4">Goch Onwubiko</h3>
+              <h3 className="text-2xl font-bold mb-4">Onwubiko Goch</h3>
               <p className="text-gray-400 mb-4 max-w-md">
                 Professional digital services including social media management,
                 graphic design, and website development. Transforming businesses
@@ -610,17 +665,17 @@ export default function LandingPage() {
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
+                    Professional Writing
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-white transition-colors">
+                    Ghost Writing
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-white transition-colors">
                     Graphic Design
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Website Development
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Content Writing
                   </Link>
                 </li>
               </ul>
