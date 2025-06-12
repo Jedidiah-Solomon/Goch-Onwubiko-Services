@@ -59,7 +59,7 @@ export default function LandingPage() {
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
               Social Media Management, Profesional Writing and Graphic Design.
-               Strategically Bringing Professionalism, Creativity, Uniquity and Tiptopness Together.
+               Simultaneously Bringing Professionalism, Creativity, Uniqueness, and Tiptopness to the Digital Domain.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4">
