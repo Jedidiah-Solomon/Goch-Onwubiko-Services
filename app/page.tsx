@@ -25,9 +25,9 @@ import ContactForm from "./ContactForm";
 const projects = [
   {
     id: 1,
-    title: "Instagram Growth Campaign",
+    title: "Instagram & Facebook Growth Campaign",
     description:
-      "Grew a brand’s Instagram followers by 300% in 60 days through strategic content scheduling and audience targeting.",
+      "Grew brands' Instagram & Facebook followers by 300% in 60 days through strategic content scheduling and audience targeting.",
     image: "/goch-1.jpg",
     category: "Social Media",
   },
@@ -35,7 +35,7 @@ const projects = [
     id: 2,
     title: "Personal Branding Blog Series",
     description:
-      "Crafted a series of ghostwritten blog posts that boosted the client’s thought leadership and SEO ranking.",
+      "Crafted series of ghostwritten blog posts that boosted clients' thought leadership and SEO ranking.",
     image: "/goch-2.jpg",
     category: "Writing",
   },
@@ -43,7 +43,7 @@ const projects = [
     id: 3,
     title: "High-Converting Sales Copy",
     description:
-      "Wrote persuasive copy for a landing page that increased product conversions by 40%.",
+      "Written persuasive copies for landing pages that increased product conversions by 40%.",
     image: "/goch-3.jpg",
     category: "Copywriting",
   },
@@ -67,7 +67,7 @@ const projects = [
     id: 6,
     title: "Brand Identity Redesign",
     description:
-      "Delivered a full graphic rebrand including logo, color palette, and marketing collateral for a startup.",
+      "Delivered full graphic rebrands including logos, color palettes, and marketing collateral for a startup.",
     image: "/goch-6.jpg",
     category: "Graphic Design",
   },
@@ -127,11 +127,9 @@ export default function LandingPage() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Social Media Management, copywriting, ghost writing, content
-              writing, history and pan-african thought, proofreading, ads
-              management, and writing and branding tips. Trained historian
-              bringing professionalism, creativity, strategy, uniquity and
-              tiptopness together.
+              Social Media Management, Professional Writing, Ghostwriting, Ads Management, and Graphic Design.
+              Simultaneously bringing professionalism, creativity, strategy, uniqueness and
+              tiptopness into the digital domain.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button
@@ -181,14 +179,14 @@ export default function LandingPage() {
                   Qualified Professional with Proven Expertise
                 </h2>
                 <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                  As a graduate of History and International Studies, I combine
+                  As a graduate of History and International Studies, with variety of non-degree certificates, I combine
                   academic rigor with creative excellence in the digital world.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
                     <span className="text-gray-700">
-                      Trained Historian & Writer
+                      Certified Historian & Writer
                     </span>
                   </div>
                   <div className="flex items-center">
@@ -250,7 +248,7 @@ export default function LandingPage() {
               Comprehensive Digital Solutions
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              From social media strategy to stunning writing; I provide
+              From social media strategy to stunning writing, I provide
               end-to-end digital services for your business growth.
             </p>
           </div>
@@ -339,16 +337,15 @@ export default function LandingPage() {
                   <Globe className="h-8 w-8 text-green-600" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Website Development
+                  Professional Writing
                 </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Modern, responsive websites that convert visitors into
-                  customers. From landing pages to full e-commerce solutions.
+                  Articulating professionally compelling writings-ups for blogs, businesses, organizations, institutions, and companies. To educate, trigger, and inform the readers.
                 </p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm text-gray-600">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    Ghost Writing
+                    Ghostwriting
                   </li>
                   <li className="flex items-center text-sm text-gray-600">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
@@ -575,8 +572,8 @@ export default function LandingPage() {
             <div className="md:col-span-2">
               <h3 className="text-2xl font-bold mb-4">Onwubiko Goch</h3>
               <p className="text-gray-400 mb-4 max-w-md">
-                Professional digital services including social media management,
-                graphic design, and website development. Transforming businesses
+                Professional digital services including social media management, professional writing, ghostwriting, and
+                graphic design. Transforming businesses
                 through creative solutions.
               </p>
               <div className="flex space-x-4">
@@ -615,7 +612,7 @@ export default function LandingPage() {
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    Ghost Writing
+                    Ghostwriting
                   </Link>
                 </li>
                 <li>
@@ -665,7 +662,7 @@ export default function LandingPage() {
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
             <p>
-              &copy; {new Date().getFullYear()} Goch Onwubiko. All rights
+              &copy; {new Date().getFullYear()} Onwubiko Goch. All rights
               reserved.
             </p>
           </div>
