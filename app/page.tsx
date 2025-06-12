@@ -289,7 +289,7 @@ export default function LandingPage() {
                   </li>
                 </ul>
                 <Button className="w-full bg-blue-600 hover:bg-blue-700">
-                  Get Started
+                  <a href="/#contact">Get Started</a>
                 </Button>
               </CardContent>
             </Card>
@@ -327,7 +327,7 @@ export default function LandingPage() {
                   </li>
                 </ul>
                 <Button className="w-full bg-purple-600 hover:bg-purple-700">
-                  View Portfolio
+                  <a href="/#contact">Get Started</a>
                 </Button>
               </CardContent>
             </Card>
@@ -364,7 +364,7 @@ export default function LandingPage() {
                   </li>
                 </ul>
                 <Button className="w-full bg-green-600 hover:bg-green-700">
-                  Start Project
+                  <a href="/#contact">Get Started</a>
                 </Button>
               </CardContent>
             </Card>
