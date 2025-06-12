@@ -26,7 +26,7 @@ export default function LandingPage() {
       {/* Header */}
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold text-gray-900">Goch Onwubiko</div>
+          <div className="text-2xl font-bold text-gray-900">Onwubiko Goch</div>
           <nav className="hidden md:flex space-x-8">
             <Link href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">
               About
@@ -58,8 +58,8 @@ export default function LandingPage() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Social Media Management, copywriting, ghost writing, content writing, history and pan-african thought, proofreading, ads management, and writing and branding tips. Trained historian
-               bringing professionalism, creativity, strategy, uniquity and tiptopness together.
+              Social Media Management, Profesional Writing and Graphic Design.
+               Strategically Bringing Professionalism, Creativity, Uniquity and Tiptopness Together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4">
@@ -99,7 +99,7 @@ export default function LandingPage() {
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                    <span className="text-gray-700">Trained Historian & Writer</span>
+                    <span className="text-gray-700">Qualified Historian & Writer</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
@@ -150,7 +150,7 @@ export default function LandingPage() {
             <Badge className="mb-4 bg-green-100 text-green-800 hover:bg-green-100">Services</Badge>
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Comprehensive Digital Solutions</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              From social media strategy to stunning writing; I provide end-to-end digital
+              From social media strategy to stunning writing, I provide end-to-end digital
               services for your business growth.
             </p>
           </div>
@@ -222,33 +222,32 @@ export default function LandingPage() {
               </CardContent>
             </Card>
 
-            {/* Website Development */}
+            {/* Professional Writing */}
             <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
               <CardContent className="p-8">
                 <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-green-200 transition-colors">
                   <Globe className="h-8 w-8 text-green-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Website Development</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Professional Writing</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Modern, responsive websites that convert visitors into customers. From landing pages to full
-                  e-commerce solutions.
+                  Professional compelling writing for businesses, companies, organizations, and institutions. To educate, trigger, or inform the reader.
                 </p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm text-gray-600">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    Responsive Web Design
+                    Ghost Writing
                   </li>
                   <li className="flex items-center text-sm text-gray-600">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    E-commerce Solutions
+                    Copywriting
                   </li>
                   <li className="flex items-center text-sm text-gray-600">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    SEO Optimization
+                    Content Writing
                   </li>
                   <li className="flex items-center text-sm text-gray-600">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    Maintenance & Support
+                    Research Writing
                   </li>
                 </ul>
                 <Button className="w-full bg-green-600 hover:bg-green-700">Start Project</Button>
@@ -365,8 +364,8 @@ export default function LandingPage() {
                       <label className="block text-sm font-medium text-gray-700 mb-2">Service Needed</label>
                       <select className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         <option>Social Media Management</option>
+                        <option>Professional Writing</option>
                         <option>Graphic Design</option>
-                        <option>Website Development</option>
                         <option>All Services</option>
                         <option>Other</option>
                       </select>
@@ -456,10 +455,10 @@ export default function LandingPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
-              <h3 className="text-2xl font-bold mb-4">Goch Onwubiko</h3>
+              <h3 className="text-2xl font-bold mb-4">Onwubiko Goch</h3>
               <p className="text-gray-400 mb-4 max-w-md">
-                Professional digital services including social media management, graphic design, and website
-                development. Transforming businesses through creative solutions.
+                Professional digital services including Social Media Management, Professional Writing, and Graphic Design.
+                Transforming businesses through creative solutions.
               </p>
               <div className="flex space-x-4">
                 <Link
@@ -486,17 +485,17 @@ export default function LandingPage() {
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
+                    Professional Writing
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-white transition-colors">
+                    Ghost Writing
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-white transition-colors">
                     Graphic Design
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Website Development
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Content Writing
                   </Link>
                 </li>
               </ul>
@@ -528,7 +527,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} Goch Onwubiko. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Onwubiko Goch. All rights reserved.</p>
           </div>
         </div>
       </footer>
