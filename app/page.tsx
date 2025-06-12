@@ -58,8 +58,8 @@ export default function LandingPage() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Professional Social Media Management, Graphic Design, and Website Development services. Trained historian
-              and qualified graphic designer bringing creativity and strategy together.
+              Social Media Management, copywriting, ghost writing, content writing, history and pan-african thought, proofreading, ads management, and writing and branding tips. Trained historian
+               bringing professionalism, creativity, strategy, uniquity and tiptopness together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4">
@@ -93,9 +93,8 @@ export default function LandingPage() {
                 <Badge className="mb-4 bg-purple-100 text-purple-800 hover:bg-purple-100">About Me</Badge>
                 <h2 className="text-4xl font-bold text-gray-900 mb-6">Qualified Professional with Proven Expertise</h2>
                 <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                  As a trained historian and qualified graphic designer, I bring a unique perspective to digital
-                  services. Currently studying at Nnamdi Azikiwe University (UNIZIK), I combine academic rigor with
-                  creative excellence.
+                  As a graduate of History and International Studies, I combine academic rigor with
+                  creative excellence in the digital world.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center">
@@ -104,7 +103,7 @@ export default function LandingPage() {
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                    <span className="text-gray-700">Qualified Graphic Designer</span>
+                    <span className="text-gray-700">Trained Social Media Manager</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
@@ -112,7 +111,7 @@ export default function LandingPage() {
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                    <span className="text-gray-700">University Student (UNIZIK)</span>
+                    <span className="text-gray-700">A graduate of History and International Studies</span>
                   </div>
                 </div>
               </div>
@@ -151,7 +150,7 @@ export default function LandingPage() {
             <Badge className="mb-4 bg-green-100 text-green-800 hover:bg-green-100">Services</Badge>
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Comprehensive Digital Solutions</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              From social media strategy to stunning designs and functional websites, I provide end-to-end digital
+              From social media strategy to stunning writing; I provide end-to-end digital
               services for your business growth.
             </p>
           </div>
