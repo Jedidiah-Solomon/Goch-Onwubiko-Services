@@ -100,7 +100,7 @@ export default function ContactForm() {
                 <option>Copywriting</option>
                 <option>Proofreading</option>
                 <option>Graphic Design</option>
-                <option>Others...</option>
+                <option>Others..</option>
               </select>
             </div>
 
