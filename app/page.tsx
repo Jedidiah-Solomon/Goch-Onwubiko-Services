@@ -1,8 +1,8 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Badge } from "@/components/ui/badge";
 import {
   Facebook,
   Instagram,
@@ -16,9 +16,62 @@ import {
   Star,
   CheckCircle,
   ArrowRight,
-} from "lucide-react"
-import Link from "next/link"
-import Image from "next/image"
+} from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+
+import ContactForm from "./ContactForm";
+
+const projects = [
+  {
+    id: 1,
+    title: "Instagram Growth Campaign",
+    description:
+      "Grew a brand’s Instagram followers by 300% in 60 days through strategic content scheduling and audience targeting.",
+    image: "/goch-1.jpg",
+    category: "Social Media",
+  },
+  {
+    id: 2,
+    title: "Personal Branding Blog Series",
+    description:
+      "Crafted a series of ghostwritten blog posts that boosted the client’s thought leadership and SEO ranking.",
+    image: "/goch-2.jpg",
+    category: "Writing",
+  },
+  {
+    id: 3,
+    title: "High-Converting Sales Copy",
+    description:
+      "Wrote persuasive copy for a landing page that increased product conversions by 40%.",
+    image: "/goch-3.jpg",
+    category: "Copywriting",
+  },
+  {
+    id: 4,
+    title: "Technical Article Proofreading",
+    description:
+      "Proofread and refined over 50 technical blog articles, ensuring clarity and grammatical accuracy.",
+    image: "/goch-4.jpg",
+    category: "Proofreading",
+  },
+  {
+    id: 5,
+    title: "Product Launch Social Media Strategy",
+    description:
+      "Designed and executed a social media launch strategy that generated 2,000+ leads in under a week.",
+    image: "/goch-5.jpg",
+    category: "Social Media",
+  },
+  {
+    id: 6,
+    title: "Brand Identity Redesign",
+    description:
+      "Delivered a full graphic rebrand including logo, color palette, and marketing collateral for a startup.",
+    image: "/goch-6.jpg",
+    category: "Graphic Design",
+  },
+];
 
 export default function LandingPage() {
   return (
@@ -28,20 +81,34 @@ export default function LandingPage() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-gray-900">Goch Onwubiko</div>
           <nav className="hidden md:flex space-x-8">
-            <Link href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">
+            <Link
+              href="#about"
+              className="text-gray-600 hover:text-blue-600 transition-colors"
+            >
               About
             </Link>
-            <Link href="#services" className="text-gray-600 hover:text-blue-600 transition-colors">
+            <Link
+              href="#services"
+              className="text-gray-600 hover:text-blue-600 transition-colors"
+            >
               Services
             </Link>
-            <Link href="#portfolio" className="text-gray-600 hover:text-blue-600 transition-colors">
+            <Link
+              href="#portfolio"
+              className="text-gray-600 hover:text-blue-600 transition-colors"
+            >
               Portfolio
             </Link>
-            <Link href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">
+            <Link
+              href="#contact"
+              className="text-gray-600 hover:text-blue-600 transition-colors"
+            >
               Contact
             </Link>
           </nav>
-          <Button className="bg-blue-600 hover:bg-blue-700">Get Started</Button>
+          <Button asChild className="bg-blue-600 hover:bg-blue-700">
+            <a href="#contact">Get Started</a>
+          </Button>
         </div>
       </header>
 
@@ -49,7 +116,9 @@ export default function LandingPage() {
       <section className="pt-24 pb-16 px-4">
         <div className="container mx-auto text-center">
           <div className="max-w-4xl mx-auto">
-            <Badge className="mb-6 bg-blue-100 text-blue-800 hover:bg-blue-100">Digital Services Expert</Badge>
+            <Badge className="mb-6 bg-blue-100 text-blue-800 hover:bg-blue-100">
+              Digital Services Expert
+            </Badge>
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
               Transform Your
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
@@ -58,16 +127,31 @@ export default function LandingPage() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Social Media Management, copywriting, ghost writing, content writing, history and pan-african thought, proofreading, ads management, and writing and branding tips. Trained historian
-               bringing professionalism, creativity, strategy, uniquity and tiptopness together.
+              Social Media Management, copywriting, ghost writing, content
+              writing, history and pan-african thought, proofreading, ads
+              management, and writing and branding tips. Trained historian
+              bringing professionalism, creativity, strategy, uniquity and
+              tiptopness together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4">
-                Start Your Project
-                <ArrowRight className="ml-2 h-5 w-5" />
+              <Button
+                asChild
+                size="lg"
+                className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4"
+              >
+                <a href="#contact">
+                  Start Your Project
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-4">
-                View Portfolio
+
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="text-lg px-8 py-4"
+              >
+                <a href="#portfolio">View Portfolio</a>
               </Button>
             </div>
             <div className="flex justify-center items-center space-x-8 text-sm text-gray-500">
@@ -90,28 +174,40 @@ export default function LandingPage() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <Badge className="mb-4 bg-purple-100 text-purple-800 hover:bg-purple-100">About Me</Badge>
-                <h2 className="text-4xl font-bold text-gray-900 mb-6">Qualified Professional with Proven Expertise</h2>
+                <Badge className="mb-4 bg-purple-100 text-purple-800 hover:bg-purple-100">
+                  About Me
+                </Badge>
+                <h2 className="text-4xl font-bold text-gray-900 mb-6">
+                  Qualified Professional with Proven Expertise
+                </h2>
                 <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                  As a graduate of History and International Studies, I combine academic rigor with
-                  creative excellence in the digital world.
+                  As a graduate of History and International Studies, I combine
+                  academic rigor with creative excellence in the digital world.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                    <span className="text-gray-700">Trained Historian & Writer</span>
+                    <span className="text-gray-700">
+                      Trained Historian & Writer
+                    </span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                    <span className="text-gray-700">Trained Social Media Manager</span>
+                    <span className="text-gray-700">
+                      Trained Social Media Manager
+                    </span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                    <span className="text-gray-700">Professional Ghostwriter</span>
+                    <span className="text-gray-700">
+                      Professional Ghostwriter
+                    </span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                    <span className="text-gray-700">A graduate of History and International Studies</span>
+                    <span className="text-gray-700">
+                      A graduate of History and International Studies
+                    </span>
                   </div>
                 </div>
               </div>
@@ -147,11 +243,15 @@ export default function LandingPage() {
       <section id="services" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-green-100 text-green-800 hover:bg-green-100">Services</Badge>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Comprehensive Digital Solutions</h2>
+            <Badge className="mb-4 bg-green-100 text-green-800 hover:bg-green-100">
+              Services
+            </Badge>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              Comprehensive Digital Solutions
+            </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              From social media strategy to stunning writing; I provide end-to-end digital
-              services for your business growth.
+              From social media strategy to stunning writing; I provide
+              end-to-end digital services for your business growth.
             </p>
           </div>
 
@@ -162,10 +262,13 @@ export default function LandingPage() {
                 <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
                   <Users className="h-8 w-8 text-blue-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Social Media Management</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Social Media Management
+                </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Strategic social media planning, content creation, and community management to boost your online
-                  presence and engagement.
+                  Strategic social media planning, content creation, and
+                  community management to boost your online presence and
+                  engagement.
                 </p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm text-gray-600">
@@ -185,7 +288,9 @@ export default function LandingPage() {
                     Analytics & Reporting
                   </li>
                 </ul>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">Get Started</Button>
+                <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                  Get Started
+                </Button>
               </CardContent>
             </Card>
 
@@ -195,10 +300,13 @@ export default function LandingPage() {
                 <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-purple-200 transition-colors">
                   <Palette className="h-8 w-8 text-purple-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Graphic Design</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Graphic Design
+                </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Professional graphic design services including branding, marketing materials, and visual content that
-                  captures your brand essence.
+                  Professional graphic design services including branding,
+                  marketing materials, and visual content that captures your
+                  brand essence.
                 </p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm text-gray-600">
@@ -218,7 +326,9 @@ export default function LandingPage() {
                     Print & Digital Design
                   </li>
                 </ul>
-                <Button className="w-full bg-purple-600 hover:bg-purple-700">View Portfolio</Button>
+                <Button className="w-full bg-purple-600 hover:bg-purple-700">
+                  View Portfolio
+                </Button>
               </CardContent>
             </Card>
 
@@ -228,10 +338,12 @@ export default function LandingPage() {
                 <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-green-200 transition-colors">
                   <Globe className="h-8 w-8 text-green-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Website Development</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Website Development
+                </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Modern, responsive websites that convert visitors into customers. From landing pages to full
-                  e-commerce solutions.
+                  Modern, responsive websites that convert visitors into
+                  customers. From landing pages to full e-commerce solutions.
                 </p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm text-gray-600">
@@ -251,7 +363,9 @@ export default function LandingPage() {
                     Maintenance & Support
                   </li>
                 </ul>
-                <Button className="w-full bg-green-600 hover:bg-green-700">Start Project</Button>
+                <Button className="w-full bg-green-600 hover:bg-green-700">
+                  Start Project
+                </Button>
               </CardContent>
             </Card>
           </div>
@@ -262,20 +376,28 @@ export default function LandingPage() {
       <section id="portfolio" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-orange-100 text-orange-800 hover:bg-orange-100">Portfolio</Badge>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Recent Work & Success Stories</h2>
+            <Badge className="mb-4 bg-orange-100 text-orange-800 hover:bg-orange-100">
+              Portfolio
+            </Badge>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              Recent Work & Success Stories
+            </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              See how I've helped businesses transform their digital presence and achieve their goals.
+              See how I've helped businesses transform their digital presence
+              and achieve their goals.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {[1, 2, 3, 4, 5, 6].map((item) => (
-              <Card key={item} className="group hover:shadow-xl transition-all duration-300 overflow-hidden">
+            {projects.map((project) => (
+              <Card
+                key={project.id}
+                className="group hover:shadow-xl transition-all duration-300 overflow-hidden"
+              >
                 <div className="aspect-video bg-gradient-to-br from-blue-400 to-purple-500 relative overflow-hidden">
                   <Image
-                    src="/placeholder.svg"
-                    alt={`Portfolio item ${item}`}
+                    src={project.image}
+                    alt={project.title}
                     width={400}
                     height={250}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -283,16 +405,23 @@ export default function LandingPage() {
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Project Title {item}</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    {project.title}
+                  </h3>
                   <p className="text-gray-600 text-sm mb-4">
-                    Brief description of the project and the results achieved for the client.
+                    {project.description}
                   </p>
                   <div className="flex justify-between items-center">
                     <Badge variant="secondary" className="text-xs">
-                      {item % 3 === 0 ? "Web Design" : item % 2 === 0 ? "Social Media" : "Graphic Design"}
+                      {project.category}
                     </Badge>
-                    <Button variant="ghost" size="sm" className="text-blue-600 hover:text-blue-700">
-                      View Details
+                    <Button
+                      asChild
+                      variant="ghost"
+                      size="sm"
+                      className="text-blue-600 hover:text-blue-700"
+                    >
+                      <a href="/#contact">Get in touch</a>
                     </Button>
                   </div>
                 </CardContent>
@@ -310,19 +439,33 @@ export default function LandingPage() {
               Ready to Transform Your Digital Presence?
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Let's work together to create something amazing. Get in touch today and let's discuss your project.
+              Let's work together to create something amazing. Get in touch
+              today and let's discuss your project.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-4">
-                Start Your Project
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
               <Button
+                asChild
                 size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-4"
+                className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-4"
               >
-                Schedule a Call
+                <a href="/#contact">
+                  Start Your Project
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
+
+              <Button
+                asChild
+                size="lg"
+                className="bg-white text-blue-600 hover:bg-gray-100 hover:text-blue-600 text-lg px-8 py-4 border border-blue-600"
+              >
+                <a
+                  href="https://wa.me/2348161786550"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Schedule a Call via WhatsApp
+                </a>
               </Button>
             </div>
           </div>
@@ -334,60 +477,30 @@ export default function LandingPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-100">Contact</Badge>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Let's Start Your Project</h2>
+              <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-100">
+                Contact
+              </Badge>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">
+                Let's Start Your Project
+              </h2>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Ready to take your business to the next level? Get in touch and let's discuss how I can help.
+                Ready to take your business to the next level? Get in touch and
+                let's discuss how I can help.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-12">
               {/* Contact Form */}
-              <Card className="shadow-lg border-0">
-                <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-6">Send a Message</h3>
-                  <form className="space-y-6">
-                    <div className="grid md:grid-cols-2 gap-4">
-                      <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-2">First Name</label>
-                        <Input placeholder="Your first name" />
-                      </div>
-                      <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
-                        <Input placeholder="Your last name" />
-                      </div>
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                      <Input type="email" placeholder="your.email@example.com" />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">Service Needed</label>
-                      <select className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                        <option>Social Media Management</option>
-                        <option>Graphic Design</option>
-                        <option>Website Development</option>
-                        <option>All Services</option>
-                        <option>Other</option>
-                      </select>
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">Project Details</label>
-                      <Textarea placeholder="Tell me about your project, goals, and timeline..." rows={4} />
-                    </div>
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-lg py-3">
-                      Send Message
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </Button>
-                  </form>
-                </CardContent>
-              </Card>
+
+              <ContactForm />
 
               {/* Contact Info */}
               <div className="space-y-8">
                 <Card className="shadow-lg border-0">
                   <CardContent className="p-8">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h3>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                      Get in Touch
+                    </h3>
                     <div className="space-y-6">
                       <div className="flex items-center">
                         <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
@@ -395,7 +508,9 @@ export default function LandingPage() {
                         </div>
                         <div>
                           <p className="font-medium text-gray-900">Email</p>
-                          <p className="text-gray-600">professorgoch@gmail.com</p>
+                          <p className="text-gray-600">
+                            professorgoch@gmail.com
+                          </p>
                         </div>
                       </div>
                       <div className="flex items-center">
@@ -422,7 +537,9 @@ export default function LandingPage() {
 
                 <Card className="shadow-lg border-0">
                   <CardContent className="p-8">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-6">Follow Me</h3>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                      Follow Me
+                    </h3>
                     <div className="flex space-x-4">
                       <Link
                         href="https://www.facebook.com/goch.onwubiko"
@@ -431,13 +548,13 @@ export default function LandingPage() {
                         <Facebook className="h-6 w-6" />
                       </Link>
                       <Link
-                        href="#"
+                        href="https://www.instagram.com/onwubiko.goch?igsh=YXM3ZWgyN2YybWJz"
                         className="bg-pink-600 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-pink-700 transition-colors"
                       >
                         <Instagram className="h-6 w-6" />
                       </Link>
                       <Link
-                        href="#"
+                        href="https://x.com/OnwubikoGoch?t=cHIFKjPRX1ONFhI351JPAQ&s=09"
                         className="bg-blue-400 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors"
                       >
                         <Twitter className="h-6 w-6" />
@@ -458,8 +575,9 @@ export default function LandingPage() {
             <div className="md:col-span-2">
               <h3 className="text-2xl font-bold mb-4">Goch Onwubiko</h3>
               <p className="text-gray-400 mb-4 max-w-md">
-                Professional digital services including social media management, graphic design, and website
-                development. Transforming businesses through creative solutions.
+                Professional digital services including social media management,
+                graphic design, and website development. Transforming businesses
+                through creative solutions.
               </p>
               <div className="flex space-x-4">
                 <Link
@@ -468,10 +586,16 @@ export default function LandingPage() {
                 >
                   <Facebook className="h-5 w-5" />
                 </Link>
-                <Link href="https://www.instagram.com/onwubiko.goch?igsh=YXM3ZWgyN2YybWJz" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="https://www.instagram.com/onwubiko.goch?igsh=YXM3ZWgyN2YybWJz"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   <Instagram className="h-5 w-5" />
                 </Link>
-                <Link href="https://x.com/OnwubikoGoch?t=cHIFKjPRX1ONFhI351JPAQ&s=09" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="https://x.com/OnwubikoGoch?t=cHIFKjPRX1ONFhI351JPAQ&s=09"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   <Twitter className="h-5 w-5" />
                 </Link>
               </div>
@@ -505,22 +629,34 @@ export default function LandingPage() {
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <Link href="#about" className="hover:text-white transition-colors">
+                  <Link
+                    href="#about"
+                    className="hover:text-white transition-colors"
+                  >
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link href="#services" className="hover:text-white transition-colors">
+                  <Link
+                    href="#services"
+                    className="hover:text-white transition-colors"
+                  >
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link href="#portfolio" className="hover:text-white transition-colors">
+                  <Link
+                    href="#portfolio"
+                    className="hover:text-white transition-colors"
+                  >
                     Portfolio
                   </Link>
                 </li>
                 <li>
-                  <Link href="#contact" className="hover:text-white transition-colors">
+                  <Link
+                    href="#contact"
+                    className="hover:text-white transition-colors"
+                  >
                     Contact
                   </Link>
                 </li>
@@ -528,10 +664,13 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} Goch Onwubiko. All rights reserved.</p>
+            <p>
+              &copy; {new Date().getFullYear()} Goch Onwubiko. All rights
+              reserved.
+            </p>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
