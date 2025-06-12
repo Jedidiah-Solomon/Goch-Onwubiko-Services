@@ -395,7 +395,7 @@ export default function LandingPage() {
                         </div>
                         <div>
                           <p className="font-medium text-gray-900">Email</p>
-                          <p className="text-gray-600">goch.onwubiko@email.com</p>
+                          <p className="text-gray-600">professorgoch@gmail.com</p>
                         </div>
                       </div>
                       <div className="flex items-center">
@@ -404,7 +404,7 @@ export default function LandingPage() {
                         </div>
                         <div>
                           <p className="font-medium text-gray-900">Phone</p>
-                          <p className="text-gray-600">+234 XXX XXX XXXX</p>
+                          <p className="text-gray-600">+234 816 178 6550</p>
                         </div>
                       </div>
                       <div className="flex items-center">
@@ -468,10 +468,10 @@ export default function LandingPage() {
                 >
                   <Facebook className="h-5 w-5" />
                 </Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="https://www.instagram.com/onwubiko.goch?igsh=YXM3ZWgyN2YybWJz" className="text-gray-400 hover:text-white transition-colors">
                   <Instagram className="h-5 w-5" />
                 </Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="https://x.com/OnwubikoGoch?t=cHIFKjPRX1ONFhI351JPAQ&s=09" className="text-gray-400 hover:text-white transition-colors">
                   <Twitter className="h-5 w-5" />
                 </Link>
               </div>
