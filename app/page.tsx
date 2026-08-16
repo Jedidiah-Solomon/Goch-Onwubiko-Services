@@ -36,7 +36,7 @@ const projects = [
     title: "Personal Branding Blog Series",
     description:
       "Crafted series of ghostwritten blog posts that boosted clients' thought leadership and SEO ranking.",
-    image: "/goch-2.jpg",
+    image: "/goch-2.jpeg",
     category: "Writing",
   },
   {
