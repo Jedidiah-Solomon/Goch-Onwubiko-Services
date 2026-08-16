@@ -81,7 +81,7 @@ export default function LandingPage() {
       <header className="fixed top-0 w-full bg-black/95 backdrop-blur-sm border-b border-yellow-400/40 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <Link
-            href="https://www.gochonwubiko.name.ng/"
+            href="https://www.gochonwubiko.name.ng"
             className="text-2xl font-bold text-white hover:text-yellow-400 transition-colors"
           >
             Onwubiko Goch
@@ -577,7 +577,7 @@ export default function LandingPage() {
             <div className="md:col-span-2">
               <h3 className="text-2xl font-bold mb-4">
                 <Link
-                  href="https://www.gochonwubiko.name.ng/"
+                  href="https://www.gochonwubiko.name.ng"
                   className="text-yellow-400 hover:text-yellow-300 transition-colors"
                 >
                   Onwubiko Goch
