@@ -10,7 +10,7 @@ import {
   Mail,
   Phone,
   MapPin,
-  Palette,
+  Briefcase,
   Globe,
   Users,
   Star,
@@ -75,67 +75,65 @@ const projects = [
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-black">
       {/* Header */}
-      <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
+      <header className="fixed top-0 w-full bg-black/95 backdrop-blur-sm border-b border-yellow-400/40 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold text-gray-900">Onwubiko Goch</div>
+          <div className="text-2xl font-bold text-white">Onwubiko Goch</div>
           <nav className="hidden md:flex space-x-8">
             <Link
               href="#about"
-              className="text-gray-600 hover:text-blue-600 transition-colors"
+              className="text-white/80 hover:text-yellow-400 transition-colors"
             >
               About
             </Link>
             <Link
               href="#services"
-              className="text-gray-600 hover:text-blue-600 transition-colors"
+              className="text-white/80 hover:text-yellow-400 transition-colors"
             >
               Services
             </Link>
             <Link
               href="#portfolio"
-              className="text-gray-600 hover:text-blue-600 transition-colors"
+              className="text-white/80 hover:text-yellow-400 transition-colors"
             >
               Portfolio
             </Link>
             <Link
               href="#contact"
-              className="text-gray-600 hover:text-blue-600 transition-colors"
+              className="text-white/80 hover:text-yellow-400 transition-colors"
             >
               Contact
             </Link>
           </nav>
-          <Button asChild className="bg-blue-600 hover:bg-blue-700">
+          <Button asChild className="bg-yellow-400 text-black hover:bg-yellow-300">
             <a href="#contact">Get Started</a>
           </Button>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-4">
+      <section className="pt-24 pb-16 px-4 bg-gradient-to-br from-black via-black to-yellow-950">
         <div className="container mx-auto text-center">
           <div className="max-w-4xl mx-auto">
-            <Badge className="mb-6 bg-blue-100 text-blue-800 hover:bg-blue-100">
+            <Badge className="mb-6 bg-yellow-400 text-black hover:bg-yellow-400">
               Digital Services Expert
             </Badge>
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               Transform Your
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+              <span className="text-yellow-400">
                 {" "}
                 Digital Presence
               </span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Social Media Management, Professional Writing, Ghostwriting, Ads Management, and Graphic Design.
-              Simultaneously bringing professionalism, creativity, strategy, uniqueness and
-              tiptopness into the digital domain.
+            <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto leading-relaxed">
+              Writing, Virtual Assistance, and Social Media Management. Bringing professionalism, creativity, strategy, and uniqueness into the digital domain
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button
                 asChild
                 size="lg"
-                className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4"
+                className="bg-yellow-400 text-black hover:bg-yellow-300 text-lg px-8 py-4"
               >
                 <a href="#contact">
                   Start Your Project
@@ -147,18 +145,18 @@ export default function LandingPage() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="text-lg px-8 py-4"
+                className="text-lg px-8 py-4 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black bg-transparent"
               >
                 <a href="#portfolio">View Portfolio</a>
               </Button>
             </div>
-            <div className="flex justify-center items-center space-x-8 text-sm text-gray-500">
+            <div className="flex justify-center items-center space-x-8 text-sm text-white/70">
               <div className="flex items-center">
-                <MapPin className="h-4 w-4 mr-2" />
+                <MapPin className="h-4 w-4 mr-2 text-yellow-400" />
                 Abuja, Nigeria
               </div>
               <div className="flex items-center">
-                <CheckCircle className="h-4 w-4 mr-2 text-green-500" />
+                <CheckCircle className="h-4 w-4 mr-2 text-yellow-400" />
                 Available for Projects
               </div>
             </div>
@@ -172,62 +170,61 @@ export default function LandingPage() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <Badge className="mb-4 bg-purple-100 text-purple-800 hover:bg-purple-100">
+                <Badge className="mb-4 bg-yellow-400 text-black hover:bg-yellow-400">
                   About Me
                 </Badge>
-                <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                  Qualified Professional with Proven Expertise
+                <h2 className="text-4xl font-bold text-black mb-6">
+                  Professional Credentials
                 </h2>
-                <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                  As a graduate of History and International Studies, with variety of non-degree certificates, I combine
-                  academic rigor with creative excellence in the digital world.
+                <p className="text-neutral-700 mb-6 text-lg leading-relaxed">
+                  Grounded in History and International Studies, I combine academic rigor, professional certifications, and creative expertise to create meaningful impact in the digital world
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                    <span className="text-gray-700">
-                      Certified Historian & Writer
+                    <CheckCircle className="h-5 w-5 text-yellow-500 mr-3" />
+                    <span className="text-black">
+                      Qualified Historian
                     </span>
                   </div>
                   <div className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                    <span className="text-gray-700">
-                      Trained Social Media Manager
+                    <CheckCircle className="h-5 w-5 text-yellow-500 mr-3" />
+                    <span className="text-black">
+                      Professional Writer
                     </span>
                   </div>
                   <div className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                    <span className="text-gray-700">
-                      Professional Ghostwriter
+                    <CheckCircle className="h-5 w-5 text-yellow-500 mr-3" />
+                    <span className="text-black">
+                      Trained Virtual Assistant
                     </span>
                   </div>
                   <div className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                    <span className="text-gray-700">
-                      A graduate of History and International Studies
+                    <CheckCircle className="h-5 w-5 text-yellow-500 mr-3" />
+                    <span className="text-black">
+                      Skilled Social Media Manager
                     </span>
                   </div>
                 </div>
               </div>
               <div className="relative">
-                <div className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl p-8 text-white">
-                  <h3 className="text-2xl font-bold mb-4">Why Choose Me?</h3>
+                <div className="bg-black rounded-2xl p-8 text-white border border-yellow-400">
+                  <h3 className="text-2xl font-bold mb-4 text-yellow-400">Why Choose Me?</h3>
                   <ul className="space-y-3">
                     <li className="flex items-center">
-                      <Star className="h-5 w-5 text-yellow-300 mr-3" />
-                      <span>Academic background in history and writing</span>
+                      <Star className="h-5 w-5 text-yellow-400 mr-3" />
+                      <span>Historical Insight</span>
                     </li>
                     <li className="flex items-center">
-                      <Star className="h-5 w-5 text-yellow-300 mr-3" />
-                      <span>Professional design qualifications</span>
+                      <Star className="h-5 w-5 text-yellow-400 mr-3" />
+                      <span>Writing Excellence</span>
                     </li>
                     <li className="flex items-center">
-                      <Star className="h-5 w-5 text-yellow-300 mr-3" />
-                      <span>Creative storytelling approach</span>
+                      <Star className="h-5 w-5 text-yellow-400 mr-3" />
+                      <span>Administrative Support</span>
                     </li>
                     <li className="flex items-center">
-                      <Star className="h-5 w-5 text-yellow-300 mr-3" />
-                      <span>Strategic thinking and execution</span>
+                      <Star className="h-5 w-5 text-yellow-400 mr-3" />
+                      <span>Digital Engagement</span>
                     </li>
                   </ul>
                 </div>
@@ -238,129 +235,127 @@ export default function LandingPage() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-16 bg-gray-50">
+      <section id="services" className="py-16 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-green-100 text-green-800 hover:bg-green-100">
+            <Badge className="mb-4 bg-yellow-400 text-black hover:bg-yellow-400">
               Services
             </Badge>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl font-bold text-white mb-6">
               Comprehensive Digital Solutions
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-white/80 max-w-2xl mx-auto">
               From social media strategy to stunning writing, I provide
-              end-to-end digital services for your business growth.
+              end-to-end digital services for your academic excellence and business growth.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Social Media Management */}
-            <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+            <Card className="group hover:shadow-xl hover:shadow-yellow-400/20 transition-all duration-300 border border-yellow-400/30 bg-white">
               <CardContent className="p-8">
-                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
-                  <Users className="h-8 w-8 text-blue-600" />
+                <div className="bg-yellow-400 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-yellow-300 transition-colors">
+                  <Users className="h-8 w-8 text-black" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                <h3 className="text-2xl font-bold text-black mb-4">
                   Social Media Management
                 </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-neutral-700 mb-6 leading-relaxed">
                   Strategic social media planning, content creation, and
                   community management to boost your online presence and
                   engagement.
                 </p>
                 <ul className="space-y-2 mb-6">
-                  <li className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                  <li className="flex items-center text-sm text-neutral-700">
+                    <CheckCircle className="h-4 w-4 text-yellow-500 mr-2" />
                     Content Strategy & Planning
                   </li>
-                  <li className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                  <li className="flex items-center text-sm text-neutral-700">
+                    <CheckCircle className="h-4 w-4 text-yellow-500 mr-2" />
                     Post Creation & Scheduling
                   </li>
-                  <li className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                  <li className="flex items-center text-sm text-neutral-700">
+                    <CheckCircle className="h-4 w-4 text-yellow-500 mr-2" />
                     Community Engagement
                   </li>
-                  <li className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                  <li className="flex items-center text-sm text-neutral-700">
+                    <CheckCircle className="h-4 w-4 text-yellow-500 mr-2" />
                     Analytics & Reporting
                   </li>
                 </ul>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                <Button className="w-full bg-black text-yellow-400 hover:bg-neutral-800">
                   <a href="/#contact">Get Started</a>
                 </Button>
               </CardContent>
             </Card>
 
-            {/* Graphic Design */}
-            <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+            {/* Virtual Assistance */}
+            <Card className="group hover:shadow-xl hover:shadow-yellow-400/20 transition-all duration-300 border border-yellow-400/30 bg-white">
               <CardContent className="p-8">
-                <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-purple-200 transition-colors">
-                  <Palette className="h-8 w-8 text-purple-600" />
+                <div className="bg-yellow-400 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-yellow-300 transition-colors">
+                  <Briefcase className="h-8 w-8 text-black" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Graphic Design
+                <h3 className="text-2xl font-bold text-black mb-4">
+                  Virtual Assistance
                 </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  Professional graphic design services including branding,
-                  marketing materials, and visual content that captures your
-                  brand essence.
+                <p className="text-neutral-700 mb-6 leading-relaxed">
+                  Providing reliable and efficient virtual support for businesses, professionals, entrepreneurs, and organizations worldwide
                 </p>
                 <ul className="space-y-2 mb-6">
-                  <li className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    Logo & Brand Identity
+                  <li className="flex items-center text-sm text-neutral-700">
+                    <CheckCircle className="h-4 w-4 text-yellow-500 mr-2" />
+                    Administrative Support
                   </li>
-                  <li className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    Marketing Materials
+                  <li className="flex items-center text-sm text-neutral-700">
+                    <CheckCircle className="h-4 w-4 text-yellow-500 mr-2" />
+                    Email & Calendar Management
                   </li>
-                  <li className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    Social Media Graphics
+                  <li className="flex items-center text-sm text-neutral-700">
+                    <CheckCircle className="h-4 w-4 text-yellow-500 mr-2" />
+                    Data Entry & Management
                   </li>
-                  <li className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    Print & Digital Design
+                  <li className="flex items-center text-sm text-neutral-700">
+                    <CheckCircle className="h-4 w-4 text-yellow-500 mr-2" />
+                    Research & Online Assistance
                   </li>
                 </ul>
-                <Button className="w-full bg-purple-600 hover:bg-purple-700">
+                <Button className="w-full bg-black text-yellow-400 hover:bg-neutral-800">
                   <a href="/#contact">Get Started</a>
                 </Button>
               </CardContent>
             </Card>
 
-            {/* Professional Writing */}
-            <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+            {/* Writing */}
+            <Card className="group hover:shadow-xl hover:shadow-yellow-400/20 transition-all duration-300 border border-yellow-400/30 bg-white">
               <CardContent className="p-8">
-                <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-green-200 transition-colors">
-                  <Globe className="h-8 w-8 text-green-600" />
+                <div className="bg-yellow-400 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-yellow-300 transition-colors">
+                  <Globe className="h-8 w-8 text-black" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Professional Writing
+                <h3 className="text-2xl font-bold text-black mb-4">
+                  Writing
                 </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  Articulating professionally compelling writings-ups for blogs, businesses, organizations, institutions, and companies. To educate, trigger, and inform the readers.
+                <p className="text-neutral-700 mb-6 leading-relaxed">
+                  Articulating professionally compelling writings for blogs, brands, scholars, and researchers across the globe
                 </p>
                 <ul className="space-y-2 mb-6">
-                  <li className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    Ghostwriting
-                  </li>
-                  <li className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                  <li className="flex items-center text-sm text-neutral-700">
+                    <CheckCircle className="h-4 w-4 text-yellow-500 mr-2" />
                     Copywriting
                   </li>
-                  <li className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    Content Writing
+                  <li className="flex items-center text-sm text-neutral-700">
+                    <CheckCircle className="h-4 w-4 text-yellow-500 mr-2" />
+                    Ghostwriting
                   </li>
-                  <li className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    Research Writing
+                  <li className="flex items-center text-sm text-neutral-700">
+                    <CheckCircle className="h-4 w-4 text-yellow-500 mr-2" />
+                    Content writing
+                  </li>
+                  <li className="flex items-center text-sm text-neutral-700">
+                    <CheckCircle className="h-4 w-4 text-yellow-500 mr-2" />
+                    Research writing
                   </li>
                 </ul>
-                <Button className="w-full bg-green-600 hover:bg-green-700">
+                <Button className="w-full bg-black text-yellow-400 hover:bg-neutral-800">
                   <a href="/#contact">Get Started</a>
                 </Button>
               </CardContent>
@@ -373,25 +368,21 @@ export default function LandingPage() {
       <section id="portfolio" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-orange-100 text-orange-800 hover:bg-orange-100">
+            <Badge className="mb-4 bg-yellow-400 text-black hover:bg-yellow-400">
               Portfolio
             </Badge>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Recent Work & Success Stories
+            <h2 className="text-4xl font-bold text-black mb-6">
+              Meet the Mind Behind the Work
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              See how I've helped businesses transform their digital presence
-              and achieve their goals.
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {projects.map((project) => (
               <Card
                 key={project.id}
-                className="group hover:shadow-xl transition-all duration-300 overflow-hidden"
+                className="group hover:shadow-xl transition-all duration-300 overflow-hidden border border-black/10 bg-white"
               >
-                <div className="aspect-video bg-gradient-to-br from-blue-400 to-purple-500 relative overflow-hidden">
+                <div className="aspect-video bg-gradient-to-br from-black to-yellow-400 relative overflow-hidden">
                   <Image
                     src={project.image}
                     alt={project.title}
@@ -402,21 +393,21 @@ export default function LandingPage() {
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  <h3 className="text-xl font-bold text-black mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-gray-600 text-sm mb-4">
+                  <p className="text-neutral-700 text-sm mb-4">
                     {project.description}
                   </p>
                   <div className="flex justify-between items-center">
-                    <Badge variant="secondary" className="text-xs">
+                    <Badge className="text-xs bg-yellow-400 text-black hover:bg-yellow-400">
                       {project.category}
                     </Badge>
                     <Button
                       asChild
                       variant="ghost"
                       size="sm"
-                      className="text-blue-600 hover:text-blue-700"
+                      className="text-black hover:text-yellow-600"
                     >
                       <a href="/#contact">Get in touch</a>
                     </Button>
@@ -429,13 +420,13 @@ export default function LandingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600">
+      <section className="py-16 bg-yellow-400">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
               Ready to Transform Your Digital Presence?
             </h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-black/80 mb-8 max-w-2xl mx-auto">
               Let's work together to create something amazing. Get in touch
               today and let's discuss your project.
             </p>
@@ -443,7 +434,7 @@ export default function LandingPage() {
               <Button
                 asChild
                 size="lg"
-                className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-4"
+                className="bg-black text-yellow-400 hover:bg-neutral-800 text-lg px-8 py-4"
               >
                 <a href="/#contact">
                   Start Your Project
@@ -454,7 +445,7 @@ export default function LandingPage() {
               <Button
                 asChild
                 size="lg"
-                className="bg-white text-blue-600 hover:bg-gray-100 hover:text-blue-600 text-lg px-8 py-4 border border-blue-600"
+                className="bg-white text-black hover:bg-neutral-100 text-lg px-8 py-4 border border-black"
               >
                 <a
                   href="https://wa.me/2348161786550"
@@ -470,17 +461,17 @@ export default function LandingPage() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 bg-gray-50">
+      <section id="contact" className="py-16 bg-black">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-100">
+              <Badge className="mb-4 bg-yellow-400 text-black hover:bg-yellow-400">
                 Contact
               </Badge>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-4xl font-bold text-white mb-6">
                 Let's Start Your Project
               </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl text-white/80 max-w-2xl mx-auto">
                 Ready to take your business to the next level? Get in touch and
                 let's discuss how I can help.
               </p>
@@ -493,66 +484,66 @@ export default function LandingPage() {
 
               {/* Contact Info */}
               <div className="space-y-8">
-                <Card className="shadow-lg border-0">
+                <Card className="shadow-lg border border-yellow-400/30 bg-white">
                   <CardContent className="p-8">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                    <h3 className="text-2xl font-bold text-black mb-6">
                       Get in Touch
                     </h3>
                     <div className="space-y-6">
                       <div className="flex items-center">
-                        <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                          <Mail className="h-6 w-6 text-blue-600" />
+                        <div className="bg-yellow-400 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                          <Mail className="h-6 w-6 text-black" />
                         </div>
                         <div>
-                          <p className="font-medium text-gray-900">Email</p>
-                          <p className="text-gray-600">
+                          <p className="font-medium text-black">Email</p>
+                          <p className="text-neutral-700">
                             professorgoch@gmail.com
                           </p>
                         </div>
                       </div>
                       <div className="flex items-center">
-                        <div className="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                          <Phone className="h-6 w-6 text-green-600" />
+                        <div className="bg-yellow-400 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                          <Phone className="h-6 w-6 text-black" />
                         </div>
                         <div>
-                          <p className="font-medium text-gray-900">Phone</p>
-                          <p className="text-gray-600">+234 816 178 6550</p>
+                          <p className="font-medium text-black">Phone</p>
+                          <p className="text-neutral-700">+234 816 178 6550</p>
                         </div>
                       </div>
                       <div className="flex items-center">
-                        <div className="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                          <MapPin className="h-6 w-6 text-purple-600" />
+                        <div className="bg-yellow-400 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                          <MapPin className="h-6 w-6 text-black" />
                         </div>
                         <div>
-                          <p className="font-medium text-gray-900">Location</p>
-                          <p className="text-gray-600">Abuja, Nigeria</p>
+                          <p className="font-medium text-black">Location</p>
+                          <p className="text-neutral-700">Abuja, Nigeria</p>
                         </div>
                       </div>
                     </div>
                   </CardContent>
                 </Card>
 
-                <Card className="shadow-lg border-0">
+                <Card className="shadow-lg border border-yellow-400/30 bg-white">
                   <CardContent className="p-8">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                    <h3 className="text-2xl font-bold text-black mb-6">
                       Follow Me
                     </h3>
                     <div className="flex space-x-4">
                       <Link
                         href="https://www.facebook.com/goch.onwubiko"
-                        className="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+                        className="bg-black text-yellow-400 w-12 h-12 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-colors"
                       >
                         <Facebook className="h-6 w-6" />
                       </Link>
                       <Link
                         href="https://www.instagram.com/onwubiko.goch?igsh=YXM3ZWgyN2YybWJz"
-                        className="bg-pink-600 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-pink-700 transition-colors"
+                        className="bg-black text-yellow-400 w-12 h-12 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-colors"
                       >
                         <Instagram className="h-6 w-6" />
                       </Link>
                       <Link
                         href="https://x.com/OnwubikoGoch?t=cHIFKjPRX1ONFhI351JPAQ&s=09"
-                        className="bg-blue-400 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors"
+                        className="bg-black text-yellow-400 w-12 h-12 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-colors"
                       >
                         <Twitter className="h-6 w-6" />
                       </Link>
@@ -566,69 +557,62 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-black text-white py-12 border-t border-yellow-400/40">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
-              <h3 className="text-2xl font-bold mb-4">Onwubiko Goch</h3>
-              <p className="text-gray-400 mb-4 max-w-md">
-                Professional digital services including social media management, professional writing, ghostwriting, and
-                graphic design. Transforming businesses
-                through creative solutions.
+              <h3 className="text-2xl font-bold mb-4 text-yellow-400">Onwubiko Goch</h3>
+              <p className="text-white/70 mb-4 max-w-md">
+                Professional digital services, including writing, virtual assistance, and social media management. Transforming academia, entrepreneurship, and business through creative solutions.
               </p>
               <div className="flex space-x-4">
                 <Link
                   href="https://www.facebook.com/goch.onwubiko"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-white/70 hover:text-yellow-400 transition-colors"
                 >
                   <Facebook className="h-5 w-5" />
                 </Link>
                 <Link
                   href="https://www.instagram.com/onwubiko.goch?igsh=YXM3ZWgyN2YybWJz"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-white/70 hover:text-yellow-400 transition-colors"
                 >
                   <Instagram className="h-5 w-5" />
                 </Link>
                 <Link
                   href="https://x.com/OnwubikoGoch?t=cHIFKjPRX1ONFhI351JPAQ&s=09"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-white/70 hover:text-yellow-400 transition-colors"
                 >
                   <Twitter className="h-5 w-5" />
                 </Link>
               </div>
             </div>
             <div>
-              <h4 className="text-lg font-semibold mb-4">Services</h4>
-              <ul className="space-y-2 text-gray-400">
+              <h4 className="text-lg font-semibold mb-4 text-yellow-400">Services</h4>
+              <ul className="space-y-2 text-white/70">
                 <li>
-                  <Link href="#" className="hover:text-white transition-colors">
+                  <Link href="#services" className="hover:text-yellow-400 transition-colors">
+                    Writing
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#services" className="hover:text-yellow-400 transition-colors">
+                    Virtual Assistance
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#services" className="hover:text-yellow-400 transition-colors">
                     Social Media Management
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Professional Writing
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Ghostwriting
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Graphic Design
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-gray-400">
+              <h4 className="text-lg font-semibold mb-4 text-yellow-400">Quick Links</h4>
+              <ul className="space-y-2 text-white/70">
                 <li>
                   <Link
                     href="#about"
-                    className="hover:text-white transition-colors"
+                    className="hover:text-yellow-400 transition-colors"
                   >
                     About
                   </Link>
@@ -636,7 +620,7 @@ export default function LandingPage() {
                 <li>
                   <Link
                     href="#services"
-                    className="hover:text-white transition-colors"
+                    className="hover:text-yellow-400 transition-colors"
                   >
                     Services
                   </Link>
@@ -644,7 +628,7 @@ export default function LandingPage() {
                 <li>
                   <Link
                     href="#portfolio"
-                    className="hover:text-white transition-colors"
+                    className="hover:text-yellow-400 transition-colors"
                   >
                     Portfolio
                   </Link>
@@ -652,7 +636,7 @@ export default function LandingPage() {
                 <li>
                   <Link
                     href="#contact"
-                    className="hover:text-white transition-colors"
+                    className="hover:text-yellow-400 transition-colors"
                   >
                     Contact
                   </Link>
@@ -660,7 +644,7 @@ export default function LandingPage() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+          <div className="border-t border-yellow-400/30 mt-8 pt-8 text-center text-white/70">
             <p>
               &copy; {new Date().getFullYear()} Onwubiko Goch. All rights
               reserved.

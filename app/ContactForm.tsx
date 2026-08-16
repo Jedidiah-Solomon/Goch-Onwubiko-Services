@@ -7,9 +7,9 @@ export default function ContactForm() {
   const [state, handleSubmit] = useForm("xrbkqabb");
 
   return (
-    <div className="shadow-lg border-0 rounded-lg">
+    <div className="shadow-lg border border-yellow-400/30 rounded-lg bg-white">
       <div className="p-8">
-        <h3 className="text-2xl font-bold text-gray-900 mb-6">
+        <h3 className="text-2xl font-bold text-black mb-6">
           Send a Message
         </h3>
 
@@ -32,7 +32,7 @@ export default function ContactForm() {
                   name="firstName"
                   type="text"
                   placeholder="Your first name"
-                  className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full p-3 border border-black/20 rounded-md focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
                   required
                 />
               </div>
@@ -49,7 +49,7 @@ export default function ContactForm() {
                   name="lastName"
                   type="text"
                   placeholder="Your last name"
-                  className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full p-3 border border-black/20 rounded-md focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
                   required
                 />
               </div>
@@ -67,7 +67,7 @@ export default function ContactForm() {
                 type="email"
                 name="email"
                 placeholder="your.email@example.com"
-                className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full p-3 border border-black/20 rounded-md focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
                 required
               />
               <ValidationError
@@ -88,18 +88,16 @@ export default function ContactForm() {
               <select
                 id="service"
                 name="service"
-                className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full p-3 border border-black/20 rounded-md focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
                 required
                 defaultValue=""
               >
                 <option value="" disabled>
                   Select a service
                 </option>
+                <option>Writing</option>
+                <option>Virtual Assistance</option>
                 <option>Social Media Management</option>
-                <option>Ghost Writing</option>
-                <option>Copywriting</option>
-                <option>Proofreading</option>
-                <option>Graphic Design</option>
                 <option>Others..</option>
               </select>
             </div>
@@ -116,7 +114,7 @@ export default function ContactForm() {
                 name="message"
                 placeholder="Tell me about your project, goals, and timeline..."
                 rows={4}
-                className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full p-3 border border-black/20 rounded-md focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
                 required
               />
               <ValidationError
@@ -137,7 +135,7 @@ export default function ContactForm() {
             <button
               type="submit"
               disabled={state.submitting}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white text-lg py-3 rounded-md transition-colors disabled:opacity-50"
+              className="w-full bg-yellow-400 hover:bg-yellow-300 text-black text-lg py-3 rounded-md transition-colors disabled:opacity-50"
             >
               Send Message
             </button>
@@ -147,7 +145,7 @@ export default function ContactForm() {
         {state.succeeded && (
           <button
             onClick={() => window.location.reload()}
-            className="mt-4 text-blue-600 underline"
+            className="mt-4 text-yellow-600 underline"
           >
             Send another message
           </button>
