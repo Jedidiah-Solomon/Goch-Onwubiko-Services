@@ -80,7 +80,12 @@ export default function LandingPage() {
       {/* Header */}
       <header className="fixed top-0 w-full bg-black/95 backdrop-blur-sm border-b border-yellow-400/40 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold text-white">Onwubiko Goch</div>
+          <Link
+            href="https://www.gochonwubiko.name.ng/"
+            className="text-2xl font-bold text-white hover:text-yellow-400 transition-colors"
+          >
+            Onwubiko Goch
+          </Link>
           <nav className="hidden md:flex space-x-8">
             <Link
               href="#about"
@@ -570,7 +575,14 @@ export default function LandingPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
-              <h3 className="text-2xl font-bold mb-4 text-yellow-400">Onwubiko Goch</h3>
+              <h3 className="text-2xl font-bold mb-4">
+                <Link
+                  href="https://www.gochonwubiko.name.ng/"
+                  className="text-yellow-400 hover:text-yellow-300 transition-colors"
+                >
+                  Onwubiko Goch
+                </Link>
+              </h3>
               <p className="text-white/70 mb-4 max-w-md">
                 Professional digital services, including writing, virtual assistance, and social media management. Transforming academia, entrepreneurship, and business through creative solutions.
               </p>
