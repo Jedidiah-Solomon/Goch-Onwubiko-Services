@@ -22,6 +22,9 @@ export const siteConfig = {
   phone: "+2348161786550",
   phoneDisplay: "+234 816 178 6550",
   location: "Abuja, Nigeria",
+  streetAddress: "Abuja, Nigeria",
+  postalCode: "900271",
+  priceRange: "$$$",
   ogImage: "/goch-1.jpeg",
   twitterHandle: "@OnwubikoGoch",
   sameAs: [
@@ -75,8 +78,27 @@ export const faqs = [
 ];
 
 export function getJsonLd() {
-  const { name, url, description, email, phone, sameAs, ogImage } =
-    siteConfig;
+  const {
+    name,
+    url,
+    description,
+    email,
+    phone,
+    sameAs,
+    ogImage,
+    streetAddress,
+    postalCode,
+    priceRange,
+  } = siteConfig;
+
+  const address = {
+    "@type": "PostalAddress",
+    streetAddress,
+    addressLocality: "Abuja",
+    addressRegion: "FCT",
+    postalCode,
+    addressCountry: "NG",
+  };
 
   return [
     {
@@ -103,11 +125,7 @@ export function getJsonLd() {
       telephone: phone,
       jobTitle: "Writer, Virtual Assistant, and Social Media Manager",
       description,
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Abuja",
-        addressCountry: "NG",
-      },
+      address,
       sameAs,
       knowsAbout: [
         "Writing",
@@ -128,12 +146,9 @@ export function getJsonLd() {
       email,
       telephone: phone,
       description,
+      priceRange,
       areaServed: ["NG", "Worldwide"],
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Abuja",
-        addressCountry: "NG",
-      },
+      address,
       founder: {
         "@type": "Person",
         name,
