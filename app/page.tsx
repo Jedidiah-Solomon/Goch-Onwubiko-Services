@@ -21,6 +21,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import ContactForm from "./ContactForm";
+import FaqSection from "@/components/faq-section";
 
 const projects = [
   {
@@ -98,6 +99,12 @@ export default function LandingPage() {
               className="text-white/80 hover:text-yellow-400 transition-colors"
             >
               Portfolio
+            </Link>
+            <Link
+              href="#faq"
+              className="text-white/80 hover:text-yellow-400 transition-colors"
+            >
+              FAQ
             </Link>
             <Link
               href="#contact"
@@ -460,6 +467,8 @@ export default function LandingPage() {
         </div>
       </section>
 
+      <FaqSection />
+
       {/* Contact Section */}
       <section id="contact" className="py-16 bg-black">
         <div className="container mx-auto px-4">
@@ -631,6 +640,14 @@ export default function LandingPage() {
                     className="hover:text-yellow-400 transition-colors"
                   >
                     Portfolio
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#faq"
+                    className="hover:text-yellow-400 transition-colors"
+                  >
+                    FAQ
                   </Link>
                 </li>
                 <li>
