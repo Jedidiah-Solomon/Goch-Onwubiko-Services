@@ -28,7 +28,7 @@ const projects = [
     title: "Instagram & Facebook Growth Campaign",
     description:
       "Grew brands' Instagram & Facebook followers by 300% in 60 days through strategic content scheduling and audience targeting.",
-    image: "/goch-1.jpg",
+    image: "/goch-1.jpeg",
     category: "Social Media",
   },
   {
@@ -44,7 +44,7 @@ const projects = [
     title: "High-Converting Sales Copy",
     description:
       "Written persuasive copies for landing pages that increased product conversions by 40%.",
-    image: "/goch-3.jpg",
+    image: "/goch-3.jpeg",
     category: "Copywriting",
   },
   {
@@ -52,7 +52,7 @@ const projects = [
     title: "Technical Article Proofreading",
     description:
       "Proofread and refined over 50 technical blog articles, ensuring clarity and grammatical accuracy.",
-    image: "/goch-4.jpg",
+    image: "/goch-4.jpeg",
     category: "Proofreading",
   },
   {
@@ -60,7 +60,7 @@ const projects = [
     title: "Product Launch Social Media Strategy",
     description:
       "Designed and executed a social media launch strategy that generated 2,000+ leads in under a week.",
-    image: "/goch-5.jpg",
+    image: "/goch-5.jpeg",
     category: "Social Media",
   },
   {
@@ -68,7 +68,7 @@ const projects = [
     title: "Brand Identity Redesign",
     description:
       "Delivered full graphic rebrands including logos, color palettes, and marketing collateral for a startup.",
-    image: "/goch-6.jpg",
+    image: "/goch-6.jpeg",
     category: "Graphic Design",
   },
 ];
